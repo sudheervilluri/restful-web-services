@@ -14,6 +14,3 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-artifacts:
-  files:
-    - target/rest-web-services-1.0.jar
