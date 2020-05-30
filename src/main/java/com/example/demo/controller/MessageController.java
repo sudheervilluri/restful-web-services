@@ -9,6 +9,12 @@ import com.example.demo.beans.HelloMessages;
 @RestController
 public class MessageController {
 
+	@GetMapping("/")
+	public String helloWorld() {
+		//model.addAttribute("name", name);
+		return "hello-world";
+	}
+
 	@GetMapping("/hello-world")
 	public String hello() {
 		return "Hello World";
